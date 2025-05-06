@@ -18,7 +18,8 @@
     "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "npm run test && npm run build"
   },
   "repository": {
     "type": "git",
